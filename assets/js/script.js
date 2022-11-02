@@ -16,13 +16,18 @@ createApp({
             msg: "Hello",
             name: "",
             colorName: "",
-            isHighlight: false
+            path: "assets/img/",
+            img: "fox.jpg"
         }
     },
 
     methods: {
         myClass(style){
             this.colorName = style;
+        },
+
+        changeImg(newImg){
+            this.img = newImg
         }
     }
 

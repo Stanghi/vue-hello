@@ -22,6 +22,9 @@
             <button @click="myClass('highlight')">Highlight name</button>
 
             <h1>{{msg}} <span :class="colorName">{{name}}</span></h1>
+
+            <button @click="changeImg('fox2.jpg')">change image</button><br>
+            <img :src="path + img" alt="">
         </div>
 
         <script src="assets/js/script.js"></script>
