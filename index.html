@@ -17,8 +17,12 @@
     </head>
     <body>
 
-        <!-- MAIN -->
-        <main></main>
+        <div id="app">
+            <input v-model="name" type="text" placeholder="Enter a name">
+            <button @click="myClass('highlight')">Highlight name</button>
+
+            <h1>{{msg}} <span :class="colorName">{{name}}</span></h1>
+        </div>
 
         <script src="assets/js/script.js"></script>
     </body>

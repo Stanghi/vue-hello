@@ -17,7 +17,10 @@ body{
 }
 
 /* ---------------COMPONENTS--------------- */
-
+.highlight{
+    text-transform: uppercase;
+    color: blueviolet;
+}
 /* -----------------HEADER----------------- */
 
 /* ------------------MAIN------------------ */
