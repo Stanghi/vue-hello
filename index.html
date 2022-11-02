@@ -24,7 +24,11 @@
             <h1>{{msg}} <span :class="colorName">{{name}}</span></h1>
 
             <button @click="changeImg('fox2.jpg')">change image</button><br>
-            <img :src="path + img" alt="">
+            <button @click="hideImg_showText()">Hide img and show text</button><br>
+
+            <img v-show="isImgShow" :src="path + img" alt="">
+
+            <p v-show="isTextShow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, nihil, nemo pariatur sed quasi laborum laboriosam consequatur, ipsa atque sapiente impedit maxime inventore doloribus aut sequi amet accusamus enim exercitationem!</p>
         </div>
 
         <script src="assets/js/script.js"></script>

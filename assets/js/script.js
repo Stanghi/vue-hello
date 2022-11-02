@@ -17,7 +17,9 @@ createApp({
             name: "",
             colorName: "",
             path: "assets/img/",
-            img: "fox.jpg"
+            img: "fox.jpg",
+            isImgShow: true,
+            isTextShow: false
         }
     },
 
@@ -27,7 +29,14 @@ createApp({
         },
 
         changeImg(newImg){
-            this.img = newImg
+            this.img = newImg;
+        },
+
+        hideImg_showText(){
+            this.isImgShow = !this.isImgShow;
+
+            if (!(this.isImgShow)) this.isTextShow = true;
+            else this.isTextShow = false
         }
     }
 
